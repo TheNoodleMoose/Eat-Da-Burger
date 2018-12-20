@@ -1,6 +1,8 @@
+{{!-- For each burger create a list item --}}
 <li class="mt-2 mb-2">
     <img src="/assets/images/hamburger.png">
     {{burger_name}}
+    {{!-- If the burger is not devoured than give it a devoured button --}}
     {{#if devoured}}
 
     <button class="btn btn-danger devour" data-id="{{id}}" data-nowDevoured="{{devoured}}">
