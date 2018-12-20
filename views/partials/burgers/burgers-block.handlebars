@@ -1,0 +1,10 @@
+<li class="mt-2 mb-2">
+    <img src="/assets/images/hamburger.png">
+    {{burger_name}}
+    {{#if devoured}}
+
+    <button class="btn btn-danger devour" data-id="{{id}}" data-nowDevoured="{{devoured}}">
+        DEVOUR
+    </button>
+    {{/if}}
+</li>
